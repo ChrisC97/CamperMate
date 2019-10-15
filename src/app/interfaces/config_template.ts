@@ -1,0 +1,1 @@
+export var GMAPS_KEY: string = "YOUR_KEY_HERE";

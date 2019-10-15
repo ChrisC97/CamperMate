@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      <img src="assets/images/logo.png" class="logo" />
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      Camp Details
+    </ion-card-header>
+
+    <ion-card-content>
+      Update this form with the details of your current camp so you have an easy reference for later.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list lines="none">
+    <form [formGroup]="campDetailsForm" (inputs)="SaveForm()">
+      <ion-item>
+        <ion-label position="stacked">Gate Access Code</ion-label>
+        <ion-input formControlName="gateAccessCode" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label position="stacked">Ammenities Code</ion-label>
+          <ion-input formControlName="ammenitiesCode" type="text"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+          <ion-label position="stacked">WiFi Password</ion-label>
+          <ion-input formControlName="wifiPassword" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label position="stacked">Phone Number</ion-label>
+          <ion-input formControlName="phoneNumber" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label position="stacked">Departure Data</ion-label>
+          <ion-datetime formControlName="departure" displayFormat="DD/MM/YYYY"></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+          <ion-label position="stacked">Notes</ion-label>
+          <ion-input formControlName="notes" type="text"></ion-input>
+      </ion-item>
+    </form>
+  </ion-list>
+</ion-content>

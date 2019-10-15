@@ -1,0 +1,7 @@
+{
+  "appId": "com.cc.campermate",
+  "appName": "campermate",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}
